@@ -1,6 +1,6 @@
 --- 
 name: check_bgp
-description: |+
+description: |
     Requires Net::SNMP.
        
        
