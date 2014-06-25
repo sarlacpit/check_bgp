@@ -1,0 +1,87 @@
+--- 
+name: check_bgp
+description: |+
+    Requires Net::SNMP.
+       
+       
+     Usage:
+       
+     check\_bgp.pl -H  [-C ] -p
+       
+     check\_bgp.pl [-h | --help]
+       
+     check\_bgp.pl [-V | --version]
+       
+       
+     -H (--hostname) Hostname to query - (required)
+       
+     -C (--community) SNMP read community or v3 auth (defaults to public)
+       
+     (v3 specified as username:authpassword:... )
+       
+     username = SNMPv3 security name
+       
+     authpassword = SNMPv3 authentication pass phrase (or hexidecimal key)
+       
+     authprotocol = SNMPv3 authentication protocol (md5 (default) or sha)
+       
+     privpassword = SNMPv3 privacy pass phrase (or hexidecmal key)
+       
+     privprotocol = SNMPv3 privacy protocol (des (default) or aes)
+       
+     -v (--snmp\_version) 1 for SNMP v1
+       
+     2 for SNMP v2c (default)
+       
+     3 for SNMP v3
+       
+     -p {--peer} IP of BGP Peer
+       
+     -V (--version) Plugin version
+       
+     -h (--help) usage help
+       
+       
+       
+     Primary MIB reference - BGP4-MIB
+       
+       
+     Version 0.4 added snmpv3 support
+       
+     Version 0.3 $snmp was not checked for being defined - fixed
+       
+     Version 0.2 conformed with ePN
+       
+    
+url: "http://www.nagios.org"
+tags: ~
+vendor: SNMP
+target: Network/SNMP
+type: Plugin
+license: ~
+releases: 
+  - 
+    name: v1
+    description: First Release
+    files: 
+      - 
+        name: check_bgp.pl
+        description: "check_bgp.pl version 0.2"
+        path: file:///check_bgp.pl
+        md5: !binary |
+            MTE3Njk1ZTdkMzJhYjY4MDY3ZGYyMGQ4ZjhjY2VmYzE=
+
+      - 
+        name: check_bgp.0.3.pl
+        description: "check_bgp.pl version 0.3"
+        path: file:///check_bgp.0.3.pl
+        md5: !binary |
+            ZjAwODgxMmFiZWE1ODAwOWNjM2QyMjEyOGE4M2EwYTc=
+
+      - 
+        name: check_bgp.0.4.pl
+        description: "check_bgp.pl version 0.4"
+        path: file:///check_bgp.0.4.pl
+        md5: !binary |
+            NjU4OGMzOTYwZjZmYjAwYzBiMWFkMjg3NmY5MDM3OGM=
+
