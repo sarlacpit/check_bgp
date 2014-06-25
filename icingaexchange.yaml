@@ -61,27 +61,21 @@ type: Plugin
 license: ~
 releases: 
   - 
-    name: v1
-    description: First Release
+    name: default
+    description: Default release
     files: 
       - 
         name: check_bgp.pl
+        url: "file:///check_bgp.pl"
         description: "check_bgp.pl version 0.2"
-        path: file:///check_bgp.pl
-        md5: !binary |
-            MTE3Njk1ZTdkMzJhYjY4MDY3ZGYyMGQ4ZjhjY2VmYzE=
-
+        checksum: 117695e7d32ab68067df20d8f8ccefc1
       - 
         name: check_bgp.0.3.pl
+        url: "file:///check_bgp.0.3.pl"
         description: "check_bgp.pl version 0.3"
-        path: file:///check_bgp.0.3.pl
-        md5: !binary |
-            ZjAwODgxMmFiZWE1ODAwOWNjM2QyMjEyOGE4M2EwYTc=
-
+        checksum: f008812abea58009cc3d22128a83a0a7
       - 
         name: check_bgp.0.4.pl
+        url: "file:///check_bgp.0.4.pl"
         description: "check_bgp.pl version 0.4"
-        path: file:///check_bgp.0.4.pl
-        md5: !binary |
-            NjU4OGMzOTYwZjZmYjAwYzBiMWFkMjg3NmY5MDM3OGM=
-
+        checksum: 6588c3960f6fb00c0b1ad2876f90378c
